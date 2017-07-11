@@ -822,13 +822,13 @@ class Camera(object):
                 self._logger.info("File added.")
             elif self.__event_type_p[0] == lib.GP_EVENT_TIMEOUT:
                 self._logger.debug("Timeout while waiting for event.")
-                continue
+                # continue
             do_break = (self.__event_type_p[0] == event_type or
                         ((time.time() - start_time > duration)
                          if duration else False))
             if do_break:
                 break
-        if event_type == lib.GP_EVENT_FILE_ADDED:
+        if self.__event_type_p[0] == lib.GP_EVENT_FILE_ADDED:
             camfile_p = ffi.cast("CameraFilePath*", self.__event_data_p[0])
             dirname = ffi.string(camfile_p[0].folder).decode()
             directory = next(f for f in self.list_all_directories()
