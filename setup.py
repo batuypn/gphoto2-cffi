@@ -35,7 +35,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5'],
     author="Johannes Baiter",
-    url="http://github.com/jbaiter/gphoto2-cffi.git",
+    url="http://github.com/sofyo/gphoto2-cffi.git",
     author_email="johannes.baiter@gmail.com",
     license='LGPLv3',
     packages=['gphoto2cffi'],
