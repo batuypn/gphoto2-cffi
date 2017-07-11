@@ -58,7 +58,7 @@ Installation
 
 From Source::
 
-    $ pip install git+https://github.com/jbaiter/gphoto2-cffi.git
+    $ pip install git+https://github.com/sofyo/gphoto2-cffi.git
 
 Similar projects
 ----------------
